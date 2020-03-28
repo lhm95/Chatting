@@ -1,0 +1,375 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: 'Noto Sans Korean', sans-serif;
+}
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.chatWrap {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+.chatWrap .faq{
+  position: absolute;
+  right:0;
+  z-index: -1;
+  background: #f1f1f1;
+  width:340px;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 1s;
+  box-shadow: rgba(81, 99, 120, 0.3) 0px 6px 60px 0px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.chatWrap .faq.on{
+  width:680px;
+}
+.chatWrap .faq .faq_background{
+  width:300px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background: #fff;
+  padding:10px 15px;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px 0px, rgba(0, 0, 0, 0.01) 0px 0px 0px 1px;
+}
+.chatWrap .faq input{
+  width: 300px;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px 0px, rgba(0, 0, 0, 0.01) 0px 0px 0px 1px;
+  padding: 12px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-size: 12px;
+  margin-bottom:20px;
+  box-sizing: border-box;
+}
+.chatWrap .faq h4{
+  margin:10px 0;
+  font-size:15px;
+  font-weight: 400;
+}
+.chatWrap .faq h4.p2{
+  margin-top:30px;
+}
+.chatWrap .faq ul{
+  width:270px;
+}
+.chatWrap .faq ul li{
+  font-size:14px;
+  margin:8px 0;
+  cursor: pointer;
+}
+.chatWrap .faq ul.quick{
+  text-align: center;
+  box-sizing: border-box;
+  margin-bottom:10px;
+}
+.chatWrap .faq ul.quick li{
+  width:60px;
+  height:60px;
+  line-height: 60px;
+  margin:0 5px;
+  border-radius: 50%;
+  display: inline-block;
+  background:#ccc;
+  font-size:13px;
+}
+
+.chatWrap .faq .sns{
+  width:300px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background: #fff;
+  padding:10px 15px;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px 0px, rgba(0, 0, 0, 0.01) 0px 0px 0px 1px;
+  margin-top:20px;
+}
+.chatWrap .faq .sns ul{
+
+}
+.chatWrap .faq .sns ul li{
+
+}
+.chatWrap .faq ul li p{
+  background: linear-gradient(130deg, rgb(78, 91, 255) 0%, rgb(78, 91, 255) 50%, rgb(106, 78, 255)) 100% center;
+  display: inline-block;
+  padding:5px 8px;
+  border-radius: 10px;
+  color:#fff;
+}
+.chatWrap .chatBtn {
+  border-radius: 50%;
+  background: #000;
+  width: 60px;
+  height: 60px;
+  display: none;
+  box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0.5);
+}
+.chatWrap .chat {
+  width: 340px;
+  min-height: 590px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: rgba(81, 99, 120, 0.3) 0px 6px 60px 0px;
+  background: #fff;
+}
+.chatWrap .chat .chatTop{
+  padding: 8px;
+  position: relative;
+}
+.chatWrap .chat .chatTop .background{
+  position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 240px;
+    background: linear-gradient(130deg, rgb(78, 91, 255) 0%, rgb(78, 91, 255) 50%, rgb(106, 78, 255)) 100% center;
+}
+.chatWrap .chat .chatTop .background::before{
+  content: "";
+    display: block;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 100px;
+    background: linear-gradient(transparent 0%, rgb(251, 251, 252) 100%);
+}
+
+.chatWrap .chat .chatTitle {
+  padding: 5px 15px;
+  position: relative;
+  color: #fff;
+}
+.chatWrap .chat .chatTitle .help{
+  margin-bottom:10px;
+}
+.chatWrap .chat .chatTitle .help p {
+  background: #fff;
+  display: inline-block;
+  padding:0px 8px;
+  border-radius: 3px;
+  color:#000;
+  font-size:12px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.chatWrap .chat .chatTitle .help p:hover{
+  background:red;
+  color:#fff;
+}
+.chatWrap .chat .chatTitle h4 {
+  font-size: 21px;
+  margin-bottom:20px;
+}
+.chatWrap .chat .chatTitle p {
+  font-size: 14px;
+  line-height: 19px;
+}
+.chatWrap .chat .chatTitle p.openBtn{
+  display: inline-block;
+}
+.chatWrap .chat .chatTitle p.openBtn:hover{
+  font-weight: 600;
+  cursor: pointer;
+}
+.chatWrap .chat .chatTitle .openTime {
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  padding: 10px;
+  position: absolute;
+  display: none;
+}
+.chatWrap .chat .chatTitle .openTime p {
+  color: #fff;
+}
+.chatWrap .chat .chatTitle .basicBtn {
+}
+.chatWrap .chat .chatTitle .basicBtn ul {
+}
+.chatWrap .chat .chatTitle .basicBtn ul li {
+}
+.chatWrap .chat .chatTitle .basicBtn ul li .setting {
+}
+.chatWrap .chat .chatTitle .basicBtn ul li .exit {
+}
+
+.chatWrap .chat .board {
+  position: relative;
+}
+
+.chatWrap .chat .board .chatting {
+  background: #fff;
+  width:320px;
+  margin:0 auto;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px 0px, rgba(0, 0, 0, 0.01) 0px 0px 0px 1px;
+  padding-top:15px;
+  padding-bottom:20px;
+}
+.chatWrap .chat .board .chatting .balloon {
+  padding:10px 8px;
+  overflow: hidden;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.chatWrap .chat .board .chatting .balloon:hover{
+  transition: all 0.5s;
+  background: #f8f8f8;
+}
+.chatWrap .chat .board .chatting .balloon .leftBalloon_01{
+  width:62px;
+  float: left;
+}
+.chatWrap .chat .board .chatting .balloon .leftBalloon_02{
+  float: left;
+}
+.chatWrap .chat .board .chatting .rightBallon{
+  display: none;
+}
+.chatWrap .chat .board .chatting .balloon .profile {
+  width:62px;
+}
+.chatWrap .chat .board .chatting .balloon .profile p{
+  width:34px;
+  height:34px;
+  background: #000;
+  border-radius: 50%;
+  font-size:0;
+  margin: 0 auto;
+}
+.chatWrap .chat .board .chatting .balloon .nickname {
+  font-size:15px;
+  font-weight: bold;
+  margin-bottom:8px;
+}
+.chatWrap .chat .board .chatting .balloon .nickname p {
+}
+.chatWrap .chat .board .chatting .balloon .contents {
+  font-size:13px;
+  
+}
+.chatWrap .chat .board .chatting .startBtn {
+  margin-top:15px;
+}
+.chatWrap .chat .board .chatting .startBtn button {
+  display: block;
+  width:150px;
+  margin:0 auto;
+  height:42px;
+  border-radius: 18px;
+  background-color: rgb(78, 91, 255);
+  color:#fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+.chatWrap .chat .board .prevChat{
+  background: linear-gradient(130deg, rgb(78, 91, 255) 0%, rgb(78, 91, 255) 50%, rgb(106, 78, 255)) 100% center;
+  color:#fff;
+  font-weight: bold;
+  width:320px;
+  margin:15px auto;
+  padding:18px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px 0px, rgba(0, 0, 0, 0.01) 0px 0px 0px 1px;
+  text-align: center;
+  cursor: pointer;
+}
+.chatWrap .chat .chatBar{}
+.chatWrap .chat .chatBar input{
+  display: block;
+  width: 320px;
+  margin:0 auto;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px 0px, rgba(0, 0, 0, 0.1) 0px 0px 0px 1px;
+  padding:12px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-size:12px;
+}
+.chatWrap .chat.on{
+  position: relative;
+  
+}
+.chatWrap .chat.on .chatTitle > p{
+  display: none;
+}
+.chatWrap .chat.on .chatTitle h4{
+  margin-bottom:0px;
+}
+.chatWrap .chat.on .board .chatting{
+  width:100%;
+  border-radius: 0;
+  box-shadow:inset rgba(0, 0, 0, 0.1) 0px 4px 6px 0px;
+}
+.chatWrap .chat.on .board .chatting .startBtn, .chatWrap .chat.on .board .prevChat{
+  display: none;
+}
+.chatWrap .chat.on .board .chatting .balloon{
+  cursor: auto;
+}
+.chatWrap .chat.on .board .chatting .balloon:hover{
+  background: #fff;
+}
+.chatWrap .chat.on .board .chatting .balloon .leftBalloon_01{
+  width:32px;
+}
+.chatWrap .chat.on .board .chatting .balloon .profile{
+  width:100%;
+}
+.chatWrap .chat.on .board .chatting .balloon .profile p{
+  width:24px;
+  height:24px;
+}
+.chatWrap .chat.on .board .chatting .balloon .leftBalloon_02 .contents{
+  background-color: rgb(238, 241, 244);
+    color: rgb(43, 47, 53);
+    padding: 10px 12px;
+    border-radius: 15px;
+    border-top-left-radius: 3px;
+    max-width: 230px;
+}
+.chatWrap .chat.on .board .chatting .rightBallon{
+  display: block;
+  text-align: right;
+  padding: 5px 8px;
+  padding-right:12px;
+}
+.chatWrap .chat.on .board .chatting .rightBallon .contents{
+  background-color: rgb(78, 91, 255);
+  color: #fff;
+  padding: 10px 12px;
+  border-radius: 15px;
+  border-top-right-radius: 3px;
+  max-width: 230px;
+  display: inline-block;
+  text-align: left;
+  font-size: 13px;
+}
+.chatWrap .chat.on .chatBar{
+  position: absolute;
+  bottom:20px;
+  left:50%;
+  margin-left:-160px;
+}
