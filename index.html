@@ -5,6 +5,7 @@
     <title>Chatting</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/theeluwin/NotoSansKR-Hestia@master/stylesheets/NotoSansKR-Hestia.css" integrity="sha384-zGzb8nSrN9lm5PPcfztVC5DjjTs5sVStV85IH8x51fM9yIwmI+Uvh3RZDJlrpPWQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="main.js"></script>
 </head>
@@ -13,109 +14,110 @@
     <div id="wrap">
         <footer>
             <div class="chatWrap">
-                <div class="chatBtn">
-
+                <div class="chatBtn on">
                 </div>
-                <div class="faq">
-                    <input type="text" placeholder="궁금하신 것을 더욱 빠르게 찾아보세요"> <!-- 검색 아이콘 -->
-                    <div class="faq_background">
-                        <h4>궁금하신 것이 아래에 있으신가요?</h4>
-                        <ul>
-                            <li><p>회원가입은 어디서 하나요?</p></li>
-                            <li><p>비밀번호를 찾고 싶어요</p></li>
-                            <li><p>회원가입은 어디서 하나요?</p></li>
-                            <li><p>비밀번호를 찾고 싶어요</p></li>
-                        </ul>
-                        <h4 class="p2">아래 메뉴로 바로 이동하시겠어요?</h4>
-                        <ul class="quick">
-                            <li>FAQ</li>
-                            <li>FAQ</li>
-                            <li>법령정보</li>
-                        </ul>
-                    </div>
-                    <div class="sns">
-                        <ul>
-                            <li>kakao</li>
-                            <li>facebook</li>
-                            <li>twitter</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="chat">
-                    <div class="chatTop">
-                        <div class="background"></div>
-                        <div class="chatTitle">
-                            <div class="help">
-                                <p>HELP</p>
-                            </div>
-                            <h4>IO-STUDIO</h4>
-                            <p>상담원과의 대화가 가능합니다 :D</p> <!-- 초승달 아이콘 -->
-                            <p class="openBtn">운영시간 확인하기</p> <!-- 시계 아이콘 -->
-                            <div class="openTime">
-                                <p>월 화 수 목 금</p>
-                                <p>AM 09:00 - PM 08:00</p>
-                                <p>Have a nice day ! :D</p>
-                            </div>
-                            <div class="basicBtn">
-                                <ul>
-                                    <li>
-                                        <div class="setting"></div> <!-- 톱니 아이콘 -->
-                                        <div class="exit"></div> <!-- 종료 아이콘 -->
-                                    </li>
-                                </ul>
-                            </div>
+                <div id="chatting">
+                    <div class="faq">
+                        <input type="text" placeholder="궁금하신 것을 더욱 빠르게 찾아보세요"> <!-- 검색 아이콘 -->
+                        <div class="faq_background">
+                            <h4>궁금하신 것이 아래에 있으신가요?</h4>
+                            <ul>
+                                <li><p>회원가입은 어디서 하나요?</p></li>
+                                <li><p>비밀번호를 찾고 싶어요</p></li>
+                                <li><p>회원가입은 어디서 하나요?</p></li>
+                                <li><p>비밀번호를 찾고 싶어요</p></li>
+                            </ul>
+                            <h4 class="p2">아래 메뉴로 바로 이동하시겠어요?</h4>
+                            <ul class="quick">
+                                <li>FAQ</li>
+                                <li>FAQ</li>
+                                <li>법령정보</li>
+                            </ul>
+                        </div>
+                        <div class="sns">
+                            <ul>
+                                <li>kakao</li>
+                                <li>facebook</li>
+                                <li>twitter</li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="board">
-                        <div class="chatting">
-                            <div class="balloon leftBallon">
-                                <div class="leftBalloon_01">
-                                    <div class="profile">
-                                        <!-- 프로필 아이콘 -->
-                                        <p>하이</p>
+                    <div class="chat">
+                        <div class="chatTop">
+                            <div class="background"></div>
+                            <div class="chatTitle">
+                                <div class="help">
+                                    <p>HELP</p>
+                                </div>
+                                <h4>IO-STUDIO</h4>
+                                <p>상담원과의 대화가 가능합니다 :D</p>
+                                <p class="openBtn">운영시간 확인하기 🕓</p> <!-- 시계 아이콘 -->
+                                <div class="openTime">
+                                    <p>월 화 수 목 금</p>
+                                    <p>AM 09:00 - PM 08:00</p>
+                                    <p>Have a nice day ! :D</p>
+                                </div>
+                                <div class="basicBtn">
+                                    <ul>
+                                        <li>
+                                            <div class="exit"><i class="fas fa-angle-left"></i></div>
+                                            <div class="prev"><i class="fas fa-angle-left"></i></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="board">
+                            <div class="chatting">
+                                <div class="balloon leftBallon">
+                                    <div class="leftBalloon_01">
+                                        <div class="profile">
+                                            <!-- 프로필 아이콘 -->
+                                            <p>하이</p>
+                                        </div>
+                                    </div>
+                                    <div class="leftBalloon_02">
+                                        <div class="nickname">
+                                            <p>Channel</p>
+                                        </div>
+                                        <div class="contents">
+                                            안녕하세요 :D<br/><br/>
+                                            김영란법과 IT 서비스에 대한<br/>
+                                            정보를 찾으실 수 있습니다. 💬
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="leftBalloon_02">
-                                    <div class="nickname">
-                                        <p>Channel</p>
-                                    </div>
+                                <div class="rightBallon">
                                     <div class="contents">
-                                        안녕하세요 :D<br/><br/>
-                                        김영란법과 IT 서비스에 대한<br/>
-                                        정보를 찾으실 수 있습니다. 💬
+                                        안녕하세요 :D 
+                                        김영란에 법이 궁금합니다 자세하게 설명 부탁드립니다 감사합니다!
                                     </div>
                                 </div>
-                            </div>
-                            <div class="rightBallon">
-                                <div class="contents">
-                                    안녕하세요 :D 
-                                    김영란에 법이 궁금합니다 자세하게 설명 부탁드립니다 감사합니다!
+                                <div class="rightBallon">
+                                    <div class="contents">
+                                        안녕하세요 :D 
+                                        김영란에 법이 궁금합니다 자세하게 설명 부탁드립니다 감사합니다!
+                                    </div>
+                                </div>
+                                <div class="rightBallon">
+                                    <div class="contents">
+                                        안녕하세요 :D 
+                                        김영란에 법이 궁금합니다 자세하게 설명 부탁드립니다 감사합니다!
+                                    </div>
+                                </div>
+                                <div class="startBtn">
+                                    <button>새 채팅 시작</button> <!-- 시작 아이콘 -->
                                 </div>
                             </div>
-                            <div class="rightBallon">
-                                <div class="contents">
-                                    안녕하세요 :D 
-                                    김영란에 법이 궁금합니다 자세하게 설명 부탁드립니다 감사합니다!
-                                </div>
+                            <div class="prevChat">
+                                <p>이전 대화 보기</p> <!-- 말풍선 아이콘 -->
                             </div>
-                            <div class="rightBallon">
-                                <div class="contents">
-                                    안녕하세요 :D 
-                                    김영란에 법이 궁금합니다 자세하게 설명 부탁드립니다 감사합니다!
-                                </div>
-                            </div>
-                            <div class="startBtn">
-                                <button>새 채팅 시작</button> <!-- 시작 아이콘 -->
-                            </div>
+                            
                         </div>
-                        <div class="prevChat">
-                            <p>이전 대화 보기</p> <!-- 말풍선 아이콘 -->
-                        </div>
-                        
-                    </div>
-                    <div class="chatBar">
-                        <div>
-                            <input type="text" placeholder="Send a Message"> <!-- 전송 아이콘 -->
+                        <div class="chatBar">
+                            <div>
+                                <input type="text" placeholder="Send a Message"> <!-- 전송 아이콘 -->
+                            </div>
                         </div>
                     </div>
                 </div>

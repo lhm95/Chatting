@@ -27,6 +27,12 @@ footer {
   bottom: 30px;
   right: 30px;
 }
+#chatting{
+  display: none;
+}
+#chatting.on{
+  display: block;
+}
 .chatWrap .faq{
   position: absolute;
   right:0;
@@ -118,11 +124,15 @@ footer {
 }
 .chatWrap .chatBtn {
   border-radius: 50%;
-  background: #000;
+  background: linear-gradient(130deg, rgb(78, 91, 255) 0%, rgb(78, 91, 255) 50%, rgb(106, 78, 255)) 100% center;
   width: 60px;
   height: 60px;
   display: none;
-  box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px 0px, rgba(0, 0, 0, 0.01) 0px 0px 0px 1px;
+  cursor: pointer;
+}
+.chatWrap .chatBtn.on{
+  display: block;
 }
 .chatWrap .chat {
   width: 340px;
@@ -196,24 +206,37 @@ footer {
 .chatWrap .chat .chatTitle .openTime {
   background: rgba(0, 0, 0, 0.8);
   border-radius: 10px;
-  padding: 10px;
+  padding: 10px 15px;
   position: absolute;
   display: none;
+  z-index: 1;
 }
 .chatWrap .chat .chatTitle .openTime p {
   color: #fff;
 }
+.chatWrap .chat .chatTitle .openTime.on{
+  display: block;
+}
 .chatWrap .chat .chatTitle .basicBtn {
+  position: absolute;
+  top:0;
+  right:0;
 }
 .chatWrap .chat .chatTitle .basicBtn ul {
 }
 .chatWrap .chat .chatTitle .basicBtn ul li {
 }
-.chatWrap .chat .chatTitle .basicBtn ul li .setting {
-}
 .chatWrap .chat .chatTitle .basicBtn ul li .exit {
+  font-size:22px;
+  margin-right:8px;
+  cursor: pointer;
 }
-
+.chatWrap .chat .chatTitle .basicBtn ul li .prev{
+  display: none;
+  font-size:22px;
+  margin-right:8px;
+  cursor: pointer;
+}
 .chatWrap .chat .board {
   position: relative;
 }
@@ -317,6 +340,12 @@ footer {
 }
 .chatWrap .chat.on .chatTitle h4{
   margin-bottom:0px;
+}
+.chatWrap .chat.on .chatTitle .basicBtn ul li .exit{
+  display: none;
+}
+.chatWrap .chat.on .chatTitle .basicBtn ul li .prev{
+  display: block;
 }
 .chatWrap .chat.on .board .chatting{
   width:100%;
