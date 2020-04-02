@@ -41,11 +41,32 @@ footer {
   width:340px;
   height: 100%;
   border-radius: 20px;
-  overflow: hidden;
   transition: all 1s;
   box-shadow: rgba(81, 99, 120, 0.3) 0px 6px 60px 0px;
   padding: 20px;
   box-sizing: border-box;
+}
+.chatWrap .faq .wing{
+  width:15px;
+  text-align: center;
+  color:#fff;
+  height:30px;
+  line-height: 28px;
+  background: #2f2f2f;
+  position: absolute;
+  top:40px;
+  left:-15px;
+  z-index: 3;
+  cursor: pointer;
+  border-radius: 5px 0 0 5px;
+}
+.chatWrap .faq .wing i{
+  display: none;
+  height: 30px;
+  line-height: 28px;
+}
+.chatWrap .faq .wing i.on{
+  display: block;
 }
 .chatWrap .faq.on{
   width:680px;
@@ -58,20 +79,21 @@ footer {
   padding:10px 15px;
   box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px 0px, rgba(0, 0, 0, 0.01) 0px 0px 0px 1px;
 }
-.chatWrap .faq input{
+.chatWrap .faq p.coment{
   width: 300px;
   box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px 0px, rgba(0, 0, 0, 0.01) 0px 0px 0px 1px;
   padding: 12px;
   box-sizing: border-box;
   border-radius: 5px;
-  font-size: 12px;
+  font-size: 13px;
   margin-bottom:20px;
   box-sizing: border-box;
+  background: #fff;
 }
 .chatWrap .faq h4{
-  margin:10px 0;
   font-size:15px;
   font-weight: 400;
+  margin-bottom:15px;
 }
 .chatWrap .faq h4.p2{
   margin-top:30px;
@@ -116,7 +138,7 @@ footer {
 
 }
 .chatWrap .faq ul li p{
-  background: linear-gradient(130deg, rgb(78, 91, 255) 0%, rgb(78, 91, 255) 50%, rgb(106, 78, 255)) 100% center;
+  background: #256ab5;
   display: inline-block;
   padding:5px 8px;
   border-radius: 10px;
@@ -124,19 +146,25 @@ footer {
 }
 .chatWrap .chatBtn {
   border-radius: 50%;
-  background: linear-gradient(130deg, rgb(78, 91, 255) 0%, rgb(78, 91, 255) 50%, rgb(106, 78, 255)) 100% center;
+  background: linear-gradient(130deg, rgb(72, 183, 84) 0%, rgb(72, 183, 84) 50%, rgb(36, 133, 64)) 100% center;
   width: 60px;
   height: 60px;
   display: none;
   box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px 0px, rgba(0, 0, 0, 0.01) 0px 0px 0px 1px;
   cursor: pointer;
+  text-align: center;
+}
+.chatWrap .chatBtn img{
+  width:70%;
+  display: inline-block;
+  margin-top: 6px;
 }
 .chatWrap .chatBtn.on{
   display: block;
 }
 .chatWrap .chat {
   width: 340px;
-  min-height: 590px;
+  min-height: 485px;
   box-sizing: border-box;
   border-radius: 20px;
   overflow: hidden;
@@ -153,7 +181,7 @@ footer {
     left: 0px;
     right: 0px;
     height: 240px;
-    background: linear-gradient(130deg, rgb(78, 91, 255) 0%, rgb(78, 91, 255) 50%, rgb(106, 78, 255)) 100% center;
+    background: linear-gradient(130deg, rgb(72, 183, 84) 0%, rgb(72, 183, 84) 50%, rgb(36, 133, 64)) 100% center;
 }
 .chatWrap .chat .chatTop .background::before{
   content: "";
@@ -237,10 +265,27 @@ footer {
   margin-right:8px;
   cursor: pointer;
 }
+.chatWrap .chat .chatTitle .basicBtn ul li div img{
+  width:17px;
+  vertical-align: middle;
+}
 .chatWrap .chat .board {
   position: relative;
+  margin-bottom:15px;
 }
-
+.chatWrap .chat .board.off{
+  display: none;
+}
+.chatWrap .chat .board .chatting.cs{
+  padding: 15px 20px;
+}
+.chatWrap .chat .board .chatting.cs h4{
+  font-size:16px;
+  margin-bottom:10px;
+}
+.chatWrap .chat .board .chatting.cs p {
+  font-size:14px;
+}
 .chatWrap .chat .board .chatting {
   background: #fff;
   width:320px;
@@ -277,7 +322,9 @@ footer {
 .chatWrap .chat .board .chatting .balloon .profile p{
   width:34px;
   height:34px;
-  background: #000;
+  background: url(images/logo.png) no-repeat;
+  background-size:100% 100%;
+  border:solid 1px #ccc;
   border-radius: 50%;
   font-size:0;
   margin: 0 auto;
@@ -302,17 +349,17 @@ footer {
   margin:0 auto;
   height:42px;
   border-radius: 18px;
-  background-color: rgb(78, 91, 255);
+  background: #256ab5;
   color:#fff;
   font-weight: 600;
   cursor: pointer;
 }
-.chatWrap .chat .board .prevChat{
-  background: linear-gradient(130deg, rgb(78, 91, 255) 0%, rgb(78, 91, 255) 50%, rgb(106, 78, 255)) 100% center;
+.chatWrap .chat .board .prevChatBtn{
+  background: linear-gradient(130deg, rgb(21, 157, 211) 0%, rgb(38, 106, 181) 50%, rgb(38, 106, 181)) 100% center;
   color:#fff;
   font-weight: bold;
   width:320px;
-  margin:15px auto;
+  margin:10px auto;
   padding:18px;
   box-sizing: border-box;
   border-radius: 10px;
@@ -320,17 +367,107 @@ footer {
   text-align: center;
   cursor: pointer;
 }
-.chatWrap .chat .chatBar{}
+.chatWrap .chat .prevChat{
+  display: none;
+  position: relative;
+  max-height:360px;
+  overflow-y: scroll;
+  background: #f1f1f1;
+  margin-bottom:10px;
+}
+.chatWrap .chat .prevChat ul{
+  width:100%;
+  padding:10px;
+  box-sizing: border-box;
+}
+.chatWrap .chat .prevChat ul li{
+  background: #fff;
+  border-radius: 10px;
+  position: relative;
+  height:60px;
+  padding: 10px;
+  margin-bottom:8px;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px 0px, rgba(0, 0, 0, 0.01) 0px 0px 0px 1px;
+  cursor: pointer;
+}
+.chatWrap .chat .prevChat ul li:last-child{
+  margin-bottom: 0;
+}
+.chatWrap .chat .prevChat ul li img{
+  width:60px;
+  height:60px;
+  background: #000;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right:10px;
+  border:1px solid #ccc;
+  border-radius: 5px;
+}
+.chatWrap .chat .prevChat ul li div{
+  display: inline-block;
+  vertical-align: middle;
+}
+.chatWrap .chat .prevChat ul li div h4{
+  font-size:15px;
+}
+.chatWrap .chat .prevChat ul li div p{
+  font-size:13px;
+}
+.chatWrap .chat .prevChat ul li span{
+  position: absolute;
+  top:5px;
+  right:10px;
+  font-size:12px;
+}
+.chatWrap .chat .prevChat.on{
+  display: block;
+}
+
+.chatWrap .chat .chatBar{
+  padding:0 10px;
+  position: relative;
+}
 .chatWrap .chat .chatBar input{
   display: block;
-  width: 320px;
-  margin:0 auto;
+  width: 88%;
+  float: left;
   box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px 0px, rgba(0, 0, 0, 0.1) 0px 0px 0px 1px;
   padding:12px;
   box-sizing: border-box;
   border-radius: 5px;
   font-size:12px;
+  margin-bottom:15px;
 }
+.chatWrap .chat .chatBar div img{
+  width:100%;
+}
+.chatWrap .chat .chatBar .clip{
+  width:10%;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px 0px, rgba(0, 0, 0, 0.1) 0px 0px 0px 1px;
+  background: #fff;
+  border-radius: 5px;
+  padding:7px;
+  margin-right:2%;
+  float: left;
+  cursor: pointer;
+}
+.chatWrap .chat .chatBar .send{
+  width:11%;
+  height:38px;
+  background: #fff;
+  position: absolute;
+  right:10px;
+  top:0;
+  cursor: pointer;
+}
+.chatWrap .chat .chatBar .send img{
+  width:21px;
+  vertical-align: middle;
+}
+
+
+
+
 .chatWrap .chat.on{
   position: relative;
   
@@ -347,12 +484,19 @@ footer {
 .chatWrap .chat.on .chatTitle .basicBtn ul li .prev{
   display: block;
 }
+.chatWrap .chat.on .board{
+  max-height:360px;
+  overflow-y: scroll;
+}
 .chatWrap .chat.on .board .chatting{
   width:100%;
   border-radius: 0;
   box-shadow:inset rgba(0, 0, 0, 0.1) 0px 4px 6px 0px;
 }
-.chatWrap .chat.on .board .chatting .startBtn, .chatWrap .chat.on .board .prevChat{
+.chatWrap .chat.on .board .chatting.cs{
+  display: none;
+}
+.chatWrap .chat.on .board .chatting .startBtn, .chatWrap .chat.on .board .prevChatBtn{
   display: none;
 }
 .chatWrap .chat.on .board .chatting .balloon{
@@ -386,7 +530,7 @@ footer {
   padding-right:12px;
 }
 .chatWrap .chat.on .board .chatting .rightBallon .contents{
-  background-color: rgb(78, 91, 255);
+  background-color: #256ab5;
   color: #fff;
   padding: 10px 12px;
   border-radius: 15px;
@@ -398,7 +542,6 @@ footer {
 }
 .chatWrap .chat.on .chatBar{
   position: absolute;
-  bottom:20px;
   left:50%;
-  margin-left:-160px;
+  margin-left:-170px;
 }

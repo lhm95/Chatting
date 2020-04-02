@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/theeluwin/NotoSansKR-Hestia@master/stylesheets/NotoSansKR-Hestia.css" integrity="sha384-zGzb8nSrN9lm5PPcfztVC5DjjTs5sVStV85IH8x51fM9yIwmI+Uvh3RZDJlrpPWQ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script src="main.js"></script>
 </head>
 
@@ -15,10 +15,15 @@
         <footer>
             <div class="chatWrap">
                 <div class="chatBtn on">
+                    <img src="images/talk.png" alt="대화">
                 </div>
                 <div id="chatting">
                     <div class="faq">
-                        <input type="text" placeholder="궁금하신 것을 더욱 빠르게 찾아보세요"> <!-- 검색 아이콘 -->
+                        <div class="wing">
+                            <i class="fas fa-angle-left on"></i>
+                            <i class="fas fa-angle-right"></i>
+                        </div>
+                        <p class="coment">궁금하신 것을 더욱 빠르게 찾아보세요</p>
                         <div class="faq_background">
                             <h4>궁금하신 것이 아래에 있으신가요?</h4>
                             <ul>
@@ -34,21 +39,12 @@
                                 <li>법령정보</li>
                             </ul>
                         </div>
-                        <div class="sns">
-                            <ul>
-                                <li>kakao</li>
-                                <li>facebook</li>
-                                <li>twitter</li>
-                            </ul>
-                        </div>
                     </div>
                     <div class="chat">
                         <div class="chatTop">
                             <div class="background"></div>
                             <div class="chatTitle">
-                                <div class="help">
-                                    <p>HELP</p>
-                                </div>
+                                
                                 <h4>IO-STUDIO</h4>
                                 <p>상담원과의 대화가 가능합니다 :D</p>
                                 <p class="openBtn">운영시간 확인하기 🕓</p> <!-- 시계 아이콘 -->
@@ -60,14 +56,26 @@
                                 <div class="basicBtn">
                                     <ul>
                                         <li>
-                                            <div class="exit"><i class="fas fa-angle-left"></i></div>
-                                            <div class="prev"><i class="fas fa-angle-left"></i></div>
+                                            <div class="exit"><img src="images/exit.png" alt="exit"></div>
+                                            <div class="prev"><i class="fas fa-angle-left on"></i></div>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <div class="board">
+                            <div class="chatting cs">
+                                <h4>상담원과의 대화가 가능합니다.</h4>
+                                <p>상담 가능시간</p>
+                                <div class="openTime">
+                                    <p>월 화 수 목 금</p>
+                                    <p>AM 09:00 - PM 08:00</p>
+                                    <p>Have a nice day ! :D</p>
+                                </div>
+                            </div>
+                            <div class="prevChatBtn">
+                                <p>이전 대화 보기</p> <!-- 말풍선 아이콘 -->
+                            </div>
                             <div class="chatting">
                                 <div class="balloon leftBallon">
                                     <div class="leftBalloon_01">
@@ -78,7 +86,7 @@
                                     </div>
                                     <div class="leftBalloon_02">
                                         <div class="nickname">
-                                            <p>Channel</p>
+                                            <p>IO-STUDIO</p>
                                         </div>
                                         <div class="contents">
                                             안녕하세요 :D<br/><br/>
@@ -105,18 +113,117 @@
                                         김영란에 법이 궁금합니다 자세하게 설명 부탁드립니다 감사합니다!
                                     </div>
                                 </div>
+                                <div class="rightBallon">
+                                    <div class="contents">
+                                        안녕하세요 :D 
+                                        김영란에 법이 궁금합니다 자세하게 설명 부탁드립니다 감사합니다!
+                                    </div>
+                                </div>
+                                <div class="rightBallon">
+                                    <div class="contents">
+                                        안녕하세요 :D 
+                                        김영란에 법이 궁금합니다 자세하게 설명 부탁드립니다 감사합니다!
+                                    </div>
+                                </div>
+                                <div class="rightBallon">
+                                    <div class="contents">
+                                        안녕하세요 :D 
+                                        김영란에 법이 궁금합니다 자세하게 설명 부탁드립니다 감사합니다!
+                                    </div>
+                                </div>
+                                <div class="rightBallon">
+                                    <div class="contents">
+                                        안녕하세요 :D 
+                                        김영란에 법이 궁금합니다 자세하게 설명 부탁드립니다 감사합니다!
+                                    </div>
+                                </div>
+                                <div class="rightBallon">
+                                    <div class="contents">
+                                        안녕하세요 :D 
+                                        김영란에 법이 궁금합니다 자세하게 설명 부탁드립니다 감사합니다!
+                                    </div>
+                                </div>
                                 <div class="startBtn">
                                     <button>새 채팅 시작</button> <!-- 시작 아이콘 -->
                                 </div>
                             </div>
-                            <div class="prevChat">
-                                <p>이전 대화 보기</p> <!-- 말풍선 아이콘 -->
-                            </div>
-                            
+                        </div>
+                        <div class="prevChat">
+                            <ul>
+                                <li>
+                                    <img src="images/logo.png" alt="">
+                                    <div>
+                                        <h4>유웨이 어플라이</h4>
+                                        <p>2020년 공지사항 알림</p>
+                                        <p>2020년 공지사항 알림</p>
+                                    </div>
+                                    <span>2020-04-02</span>
+                                </li>
+                                <li>
+                                    <img src="images/logo.png" alt="">
+                                    <div>
+                                        <h4>유웨이 어플라이</h4>
+                                        <p>2020년 공지사항 알림</p>
+                                        <p>2020년 공지사항 알림</p>
+                                    </div>
+                                    <span>2020-04-02</span>
+                                </li>
+                                <li>
+                                    <img src="images/logo.png" alt="">
+                                    <div>
+                                        <h4>유웨이 어플라이</h4>
+                                        <p>2020년 공지사항 알림</p>
+                                        <p>2020년 공지사항 알림</p>
+                                    </div>
+                                    <span>2020-04-02</span>
+                                </li>
+                                <li>
+                                    <img src="images/logo.png" alt="">
+                                    <div>
+                                        <h4>유웨이 어플라이</h4>
+                                        <p>2020년 공지사항 알림</p>
+                                        <p>2020년 공지사항 알림</p>
+                                    </div>
+                                    <span>2020-04-02</span>
+                                </li>
+                                <li>
+                                    <img src="images/logo.png" alt="">
+                                    <div>
+                                        <h4>유웨이 어플라이</h4>
+                                        <p>2020년 공지사항 알림</p>
+                                        <p>2020년 공지사항 알림</p>
+                                    </div>
+                                    <span>2020-04-02</span>
+                                </li>
+                                <li>
+                                    <img src="images/logo.png" alt="">
+                                    <div>
+                                        <h4>유웨이 어플라이</h4>
+                                        <p>2020년 공지사항 알림</p>
+                                        <p>2020년 공지사항 알림</p>
+                                    </div>
+                                    <span>2020-04-02</span>
+                                </li>
+                                <li>
+                                    <img src="images/logo.png" alt="">
+                                    <div>
+                                        <h4>유웨이 어플라이</h4>
+                                        <p>2020년 공지사항 알림</p>
+                                        <p>2020년 공지사항 알림</p>
+                                    </div>
+                                    <span>2020-04-02</span>
+                                </li>
+                            </ul>
                         </div>
                         <div class="chatBar">
                             <div>
-                                <input type="text" placeholder="Send a Message"> <!-- 전송 아이콘 -->
+                                <button class="clip">
+                                    <img src="images/paperclip.png" alt="clip">
+                                </button>
+                                <input type="text" placeholder="메세지를 입력해주세요.">
+                                <button class="send">
+                                    <img src="images/airplane.png" alt="send">
+                                </button>
                             </div>
                         </div>
                     </div>
