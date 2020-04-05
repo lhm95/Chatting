@@ -13,6 +13,7 @@ li {
   list-style: none;
 }
 
+
 body {
   font-family: 'Noto Sans Korean', sans-serif;
 }
@@ -93,10 +94,10 @@ footer {
 .chatWrap .faq h4{
   font-size:15px;
   font-weight: 400;
-  margin-bottom:15px;
+  margin-bottom:11px;
 }
 .chatWrap .faq h4.p2{
-  margin-top:30px;
+  margin-top:20px;
 }
 .chatWrap .faq ul{
   width:270px;
@@ -277,7 +278,22 @@ footer {
   display: none;
 }
 .chatWrap .chat .board .chatting.cs{
-  padding: 15px 20px;
+  padding: 15px 15px;
+  position: relative;
+}
+.chatWrap .chat .board .chatting.cs .imagesBtn{
+  position: absolute;
+  top:10px;
+  right:10px;
+  width:50px;
+  border: 1px solid #ccc;
+  padding:5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.chatWrap .chat .board .chatting.cs .imagesBtn img{
+  width:100%;
+  vertical-align: middle;
 }
 .chatWrap .chat .board .chatting.cs h4{
   font-size:16px;
@@ -297,10 +313,11 @@ footer {
   padding-bottom:20px;
 }
 .chatWrap .chat .board .chatting .balloon {
-  padding:10px 8px;
+  padding:0 8px;
   overflow: hidden;
   transition: all 0.5s;
   cursor: pointer;
+  padding: 10px 0;
 }
 .chatWrap .chat .board .chatting .balloon:hover{
   transition: all 0.5s;
@@ -338,7 +355,6 @@ footer {
 }
 .chatWrap .chat .board .chatting .balloon .contents {
   font-size:13px;
-  
 }
 .chatWrap .chat .board .chatting .startBtn {
   margin-top:15px;
@@ -355,12 +371,11 @@ footer {
   cursor: pointer;
 }
 .chatWrap .chat .board .prevChatBtn{
-  background: linear-gradient(130deg, rgb(21, 157, 211) 0%, rgb(38, 106, 181) 50%, rgb(38, 106, 181)) 100% center;
+  background: linear-gradient(130deg, #999 0%,#777  50%, #555) 100% center;
   color:#fff;
-  font-weight: bold;
   width:320px;
   margin:10px auto;
-  padding:18px;
+  padding:8px 10px;
   box-sizing: border-box;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px 0px, rgba(0, 0, 0, 0.01) 0px 0px 0px 1px;
@@ -370,10 +385,10 @@ footer {
 .chatWrap .chat .prevChat{
   display: none;
   position: relative;
-  max-height:360px;
+  max-height:488px;
   overflow-y: scroll;
   background: #f1f1f1;
-  margin-bottom:10px;
+  margin-bottom:65px;
 }
 .chatWrap .chat .prevChat ul{
   width:100%;
@@ -422,6 +437,41 @@ footer {
 .chatWrap .chat .prevChat.on{
   display: block;
 }
+
+.chatWrap .chat .csChat{
+  display: none;
+  width: 100%;
+  border-radius: 0;
+  box-shadow: inset rgba(0, 0, 0, 0.1) 0px 4px 6px 0px;
+}
+.chatWrap .chat .csChat.on{
+  display: block;
+}
+.chatWrap .chat .csChat.chatting .balloon .contents.agreeBtn{
+  box-sizing: border-box;
+  font-size:0;
+}
+.chatWrap .chat .csChat.chatting .balloon .contents.agreeBtn button{
+  width:48.5%;
+  display: inline-block;
+  background: #fff;
+  padding:5px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-weight: bold;
+  color:#fff;
+}
+.chatWrap .chat .csChat.chatting .balloon .contents.agreeBtn button:nth-child(1){
+  margin-right:3%;
+  background: #256ab5;
+}
+.chatWrap .chat .csChat.chatting .balloon .contents.agreeBtn button:nth-child(2){
+  background: #888;
+}
+
+
+
 
 .chatWrap .chat .chatBar{
   padding:0 10px;
@@ -485,11 +535,13 @@ footer {
   display: block;
 }
 .chatWrap .chat.on .board{
-  max-height:360px;
-  overflow-y: scroll;
+  height:488px;
+  overflow-y: auto;
+  margin-bottom: 65px;
 }
 .chatWrap .chat.on .board .chatting{
   width:100%;
+  height:100%;
   border-radius: 0;
   box-shadow:inset rgba(0, 0, 0, 0.1) 0px 4px 6px 0px;
 }
@@ -501,6 +553,7 @@ footer {
 }
 .chatWrap .chat.on .board .chatting .balloon{
   cursor: auto;
+  background: #fff;
 }
 .chatWrap .chat.on .board .chatting .balloon:hover{
   background: #fff;
@@ -522,6 +575,19 @@ footer {
     border-radius: 15px;
     border-top-left-radius: 3px;
     max-width: 230px;
+    margin:10px 0;
+}
+.chatWrap .chat.on .board .chatting .balloon .leftBalloon_02 .contents.loginInfo{
+  font-size:14px;
+  text-align: center;
+}
+.chatWrap .chat.on .board .chatting .balloon .leftBalloon_02 .contents.loginInfo p{
+  margin-bottom:5px;
+}
+.chatWrap .chat.on .board .chatting .balloon .leftBalloon_02 .contents.loginInfo input{
+  border: 1px solid #ccc;
+  padding: 5px;
+  margin-bottom:10px;
 }
 .chatWrap .chat.on .board .chatting .rightBallon{
   display: block;
@@ -544,4 +610,39 @@ footer {
   position: absolute;
   left:50%;
   margin-left:-170px;
+  z-index: 1;
+  bottom:0;
+}
+.chatWrap .chat.on .board .talk.off{
+  display: none;
+}
+.chatWrap .chat.on .board .talk.on{
+  display: block;
+  padding:0;
+}
+
+.chatWrap .chat .prevChat::-webkit-scrollbar {
+  width: 8px;
+}
+.chatWrap .chat .prevChat::-webkit-scrollbar-thumb {
+  background-color: #aaa;
+  background-clip: padding-box;
+  border: 2px solid transparent;
+}
+.chatWrap .chat .prevChat::-webkit-scrollbar-track {
+  background-color: #ddd;
+  box-shadow: inset 0px 0px 5px white;
+}
+
+.chatWrap .chat.on .board::-webkit-scrollbar {
+  width: 8px;
+}
+.chatWrap .chat.on .board::-webkit-scrollbar-thumb {
+  background-color: #aaa;
+  background-clip: padding-box;
+  border: 2px solid transparent;
+}
+.chatWrap .chat.on .board::-webkit-scrollbar-track {
+  background-color: #ddd;
+  box-shadow: inset 0px 0px 5px white;
 }
