@@ -14,7 +14,7 @@ li {
 }
 
 
-body {
+body, button {
   font-family: 'Noto Sans Korean', sans-serif;
 }
 footer {
@@ -578,7 +578,7 @@ footer {
     margin:10px 0;
 }
 .chatWrap .chat.on .board .chatting .balloon .leftBalloon_02 .contents.loginInfo{
-  font-size:14px;
+  font-size:13px;
   text-align: center;
 }
 .chatWrap .chat.on .board .chatting .balloon .leftBalloon_02 .contents.loginInfo p{
@@ -589,6 +589,22 @@ footer {
   padding: 5px;
   margin-bottom:10px;
 }
+.chatWrap .chat.on .board .chatting .balloon .leftBalloon_02 .contents.loginInfo .radioArea{
+  background: #fff;
+  border: 1px solid #ccc;
+  height:27px;
+  line-height: 27px;
+  margin-bottom:10px;
+}
+.chatWrap .chat.on .board .chatting .balloon .leftBalloon_02 .contents.loginInfo .radioArea input{
+  vertical-align: middle;
+  margin-bottom:3px;
+}
+.chatWrap .chat.on .board .chatting .balloon .leftBalloon_02 .contents.loginInfo .radioArea input:nth-child(1){
+  margin-right:10px;
+}
+.chatWrap .chat.on .board .chatting .balloon .leftBalloon_02 .contents.loginInfo input{}
+
 .chatWrap .chat.on .board .chatting .rightBallon{
   display: block;
   text-align: right;
@@ -645,4 +661,122 @@ footer {
 .chatWrap .chat.on .board::-webkit-scrollbar-track {
   background-color: #ddd;
   box-shadow: inset 0px 0px 5px white;
+}
+
+.contents .slick-arrow{
+  font-size:0;
+}
+.contents .slick-arrow::before{
+  display: none;
+}
+.contents .slick-prev,.contents .slick-prev:hover,.contents .slick-prev:focus{
+  background: url(images/arrow_left.png);
+  background-size:100% 100%;
+}
+.contents .slick-next,.contents .slick-next:hover,.contents .slick-next:focus{
+  background: url(images/arrow_right.png);
+  background-size:100% 100%;
+}
+
+.info_type_01{
+  width:100%;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.info_type_01 .type_01_01{
+  text-align: center;
+  background: #1f942c;
+  color:#fff;
+  padding:8px 0;
+  font-size:16px;
+}
+.info_type_01 .type_01_02{
+  padding:10px;
+}
+.info_type_01 .type_01_03{}
+.info_type_01 .type_01_03 ul{
+  background: linear-gradient(130deg, rgb(72, 183, 84) 0%, rgb(72, 183, 84) 50%, rgb(36, 133, 64)) 100% center;
+  padding:10px 0;
+}
+.info_type_01 .type_01_03 ul li{
+  width:80%;
+  margin:8px auto;
+  text-align: center;
+  
+}
+.info_type_01 .type_01_03 ul li button{
+  width:100%;
+  padding:5px;
+  cursor: pointer;
+  background: #fff;
+  font-weight: 500;
+}
+.info_type_01 .type_01_04{
+  text-align: center;
+  padding:10px 0;
+}
+.info_type_01 .type_01_04 a{
+  color:#256ab5;
+  font-weight: 600;
+}
+
+.info_type_02{
+  
+}
+.info_type_02 .slick-track,.slick-list{
+  width:230px;
+}
+.info_type_02 .type_02_01{}
+.info_type_02 .type_02_01 ul.type_03{
+  width:230px;
+  text-align: center;
+}
+.info_type_02 .type_02_01 ul.type_03 li{
+  width:33.333%;
+  float: left;
+  padding: 3px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.info_type_02 .type_02_01 ul.type_03 li p{
+  background: #fff;
+  padding:15px 0;
+  font-size:12px;
+}
+
+.info_type_02 .type_02_02{
+  width:100%;
+  background: #fff;
+  padding:0 5px;
+  box-sizing: border-box;
+}
+.info_type_02 .type_02_03{
+  text-align: center;
+  background: #1f942c;
+  color:#fff;
+  padding:8px 0;
+  font-size:16px;
+}
+.info_type_02 .type_02_04{
+  padding:10px;
+}
+.info_type_02 .type_02_05{
+
+}
+.info_type_02 .type_02_05 ul{
+  background: linear-gradient(130deg, rgb(72, 183, 84) 0%, rgb(72, 183, 84) 50%, rgb(36, 133, 64)) 100% center;
+  padding:10px 0;
+}
+.info_type_02 .type_02_05 ul li{
+  width:80%;
+  margin:8px auto;
+  text-align: center;
+}
+.info_type_02 .type_02_05 ul li button{
+  width:100%;
+  padding:5px;
+  cursor: pointer;
+  background: #fff;
+  font-weight: 500;
 }

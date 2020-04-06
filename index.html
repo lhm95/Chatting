@@ -6,8 +6,13 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/theeluwin/NotoSansKR-Hestia@master/stylesheets/NotoSansKR-Hestia.css" integrity="sha384-zGzb8nSrN9lm5PPcfztVC5DjjTs5sVStV85IH8x51fM9yIwmI+Uvh3RZDJlrpPWQ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
-    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="slick-theme.css">
+    <link rel="stylesheet" href="slick.css">
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="main.js"></script>
+    <script src="slick.js"></script>
 </head>
 
 <body>
@@ -231,19 +236,154 @@
                                             회원정보를 입력해주세요.
                                         </div>
                                         <div class="contents loginInfo">
-                                            <p>계정</p>
+                                            <p>ID</p>
                                             <input type="text"><br/>
-                                            <p>비밀번호</p>
+                                            <p>PASSWORD</p>
                                             <input type="password"><br/>
                                             <p>본인여부</p>
-                                            예
-                                            <input type="radio" name="check">
-                                            아니오
-                                            <input type="radio" name="check">
+                                            <div class="radioArea">
+                                                예
+                                                <input type="radio" name="check">
+                                                아니오
+                                                <input type="radio" name="check">
+                                            </div>
                                         </div>
                                         <div class="contents agreeBtn">
                                             <button>확인</button>
                                             <button>다시쓰기</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="balloon leftBallon">
+                                    <div class="leftBalloon_01">
+                                        <div class="profile">
+                                            <!-- 프로필 아이콘 -->
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                    <div class="leftBalloon_02">
+                                        <div class="nickname">
+                                            <p>IO-STUDIO</p>
+                                        </div>
+                                        <div class="contents">
+                                            <div class="info_type_01">
+                                                <div class="type_01_01">
+                                                    학과안내 입니다
+                                                </div>
+                                                <div class="type_01_02">
+                                                    건축학은 상상력을 통해 존재하지 않는 환경을 만들어내고 제시하는 작업입니다. 건축학은 상상력을 통해 존재하지 않는 환경을 만들어내고 제시하는 작업입니다. 건축학은 상상력을 통해 존재하지 않는 환경을 만들어내고 제시하는 작업입니다. 건축학은 상상력을 통해 존재하지 않는 환경을 만들어내고 제시하는 작업입니다.
+                                                </div>
+                                                <div class="type_01_03">
+                                                    <ul>
+                                                        <li>
+                                                            <button>공학계열</button>
+                                                        </li>
+                                                        <li>
+                                                            <button>디자인계열</button>
+                                                        </li>
+                                                        <li>
+                                                            <button>보건계열</button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div  class="type_01_04">
+                                                    <a href="https://www.naver.com/">https://www.naver.com/</a>
+                                                </div>
+                                            </div>  
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="balloon leftBallon">
+                                    <div class="leftBalloon_01">
+                                        <div class="profile">
+                                            <!-- 프로필 아이콘 -->
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                    <div class="leftBalloon_02">
+                                        <div class="nickname">
+                                            <p>IO-STUDIO</p>
+                                        </div>
+                                        <div class="contents">
+                                            <div class="info_type_02">
+                                                <div class="type_02_01">
+                                                    <div class="type_02_02">
+                                                        <div class="type_02_03">
+                                                            학과안내 입니다
+                                                        </div>
+                                                        <div class="type_02_04">
+                                                            건축학은 상상력을 통해 존재하지 않는 환경을 만들어내고 제시하는 작업입니다. 건축학은 상상력을 통해 존재하지 않는 환경을 만들어내고 제시하는 작업입니다. 건축학은 상상력을 통해 존재하지 않는 환경을 만들어내고 제시하는 작업입니다. 건축학은 상상력을 통해 존재하지 않는 환경을 만들어내고 제시하는 작업입니다.
+                                                        </div>
+                                                        <div class="type_02_05">
+                                                            <ul>
+                                                                <li>
+                                                                    <button>공학계열</button>
+                                                                </li>
+                                                                <li>
+                                                                    <button>디자인계열</button>
+                                                                </li>
+                                                                <li>
+                                                                    <button>보건계열</button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="type_02_02">
+                                                        <div class="type_02_03">
+                                                            학과안내 입니다
+                                                        </div>
+                                                        <div class="type_02_04">
+                                                            건축학은 상상력을 통해 존재하지 않는 환경을 만들어내고 제시하는 작업입니다. 건축학은 상상력을 통해 존재하지 않는 환경을 만들어내고 제시하는 작업입니다. 건축학은 상상력을 통해 존재하지 않는 환경을 만들어내고 제시하는 작업입니다. 건축학은 상상력을 통해 존재하지 않는 환경을 만들어내고 제시하는 작업입니다.
+                                                        </div>
+                                                        <div class="type_02_05">
+                                                            <ul>
+                                                                <li>
+                                                                    <button>공학계열</button>
+                                                                </li>
+                                                                <li>
+                                                                    <button>디자인계열</button>
+                                                                </li>
+                                                                <li>
+                                                                    <button>보건계열</button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="balloon leftBallon">
+                                    <div class="leftBalloon_01">
+                                        <div class="profile">
+                                            <!-- 프로필 아이콘 -->
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                    <div class="leftBalloon_02">
+                                        <div class="nickname">
+                                            <p>IO-STUDIO</p>
+                                        </div>
+                                        <div class="contents">
+                                            <div class="info_type_02">
+                                                <div class="type_02_01">
+                                                    <div>
+                                                        <ul class="type_03">
+                                                            <li><p>전자도서관</p></li>
+                                                            <li><p>자료이용</p></li>
+                                                            <li><p>이용시간</p></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div>
+                                                        <ul class="type_03">
+                                                            <li><p>전자도서관</p></li>
+                                                            <li><p>자료이용</p></li>
+                                                            <li><p>이용시간</p></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -332,6 +472,14 @@
             </div>
         </footer>
     </div>
+    <script type="text/javascript">
+        $(document).ready(function(){
+          $('.type_02_01').slick({
+            infinite: true,
+            slidesToShow: 1
+          });
+        });
+      </script>
 </body>
 
 </html>
