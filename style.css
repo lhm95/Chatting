@@ -469,6 +469,21 @@ footer {
 .chatWrap .chat .csChat.chatting .balloon .contents.agreeBtn button:nth-child(2){
   background: #888;
 }
+.exitBtn{
+  width:20px;
+  position: absolute;
+  bottom:518px;
+  z-index: 1;
+  right:12px;
+  cursor: pointer;
+  display: none;
+}
+.exitBtn.on{
+  display: block;
+}
+.exitBtn img{
+  width:100%;
+}
 
 
 
@@ -779,4 +794,10 @@ footer {
   cursor: pointer;
   background: #fff;
   font-weight: 500;
+}
+.contents{
+
+}
+.contents.on{
+  box-shadow: 0px 0px 0px 1px orange;
 }

@@ -42,6 +42,7 @@ $(document).ready(function() {
         $('.chatWrap .chat .board').removeClass('off');
         $('.chatWrap .chat .prevChat').removeClass('on');
         $('.chatWrap .chat .csChat').removeClass('on');
+        $('.exitBtn').removeClass('on');
         $('.chatWrap .chat .board .chatting.talk').removeClass('on');
       });
 
@@ -71,7 +72,12 @@ $(document).ready(function() {
         $('.chatWrap .chat .csChat').addClass('on');
         $('.openTime').removeClass('on');
         $('.chatWrap .chat').addClass('on');
+        $('.exitBtn').addClass('on');
         $('.chatWrap .chat .board .chatting.talk').addClass('off');
+      });
+      // 말풍선 선택
+      $('.contents').click(function(){
+        $(this).toggleClass('on');
       });
         
     });
