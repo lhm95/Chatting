@@ -66,6 +66,7 @@ $(document).ready(function() {
         $('.chatWrap .chat .prevChat').removeClass('on');
         $('.chatWrap .chat .board').removeClass('off');
         $('.chatWrap .chat .board .chatting.talk').removeClass('off');
+        $('.chatWrap .chat .board .chatting.talk').addClass('on');
       });
       // 상담원 대화
       $('.chatWrap .chat .board .chatting.cs .imagesBtn').click(function(){

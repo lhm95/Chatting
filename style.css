@@ -330,6 +330,15 @@ footer {
 .chatWrap .chat .board .chatting .balloon .leftBalloon_02{
   float: left;
 }
+.chatWrap .chat .board .chatting .leftBallon{
+  display: none;
+}
+.chatWrap .chat .board .chatting .leftBallon.first{
+  display: block;
+}
+.chatWrap .chat .board .chatting.on .leftBallon{
+  display: block;
+}
 .chatWrap .chat .board .chatting .rightBallon{
   display: none;
 }
@@ -625,6 +634,7 @@ footer {
   text-align: right;
   padding: 5px 8px;
   padding-right:12px;
+  background: #fff;
 }
 .chatWrap .chat.on .board .chatting .rightBallon .contents{
   background-color: #256ab5;
